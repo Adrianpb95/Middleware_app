@@ -1,0 +1,20 @@
+PASO 1: 
+	- Definicion 	--> Filas/Columnas(mismo numero) --> int	--> slider 4 - 100 	--> Valor default: 12
+	- Ancho		--> Width			 --> float	--> caja texto		--> Valor default: 5		
+	- Largo		--> Depth			 --> float 	--> caja texto 	 	--> Valor default: 5
+	- Mapa altura	--> Height_map_path		 --> char[]	--> desde archivo	--> Valor default: default
+	- Textura (?)	--> With_texture (?)		 --> bool	--> checker		--> Valor default: 0 
+IF TRUE	- Textura	--> Color_map_path		 --> char[]	--> desade archivo	--> Valor default: default
+	- Cargar	--> Carga un xml con informacion de la malla
+	- Aceptar	--> Se crea la malla 		 --> Hace desaparecer este widget	--> Siguiente paso
+
+PASO 2: 
+	- Altura malla	--> y				 --> float	--> caja texto		--> Valor default: 1
+	- Escala	--> scale			 --> float	--> caja texto		--> Valor default: 1	
+	- Color		--> color			 --> rgb	--> selector de color	--> Valor default: 1 1 1 1
+	- Luz (?)	--> With_light (?)		 --> bool	--> checker		--> Valor default: 1
+IF TRUE	- Posicion luz	--> ligth_pos			 --> vec3f	--> caja texto		--> Valor default: 0 5 10
+IF TRUE	- Intensidad	--> ambient_inten		 --> float 	--> slider 0 - 1	--> Valor default: 0.2
+IF TRUE	- Difuse	--> ambient_diffuse		 --> float 	--> slider 0 - 1	--> Valor default: 0.8
+IF TRUE	- Color		--> light_color			 --> vec3f	--> caja texto		--> Valor default: 1 1 1
+	- Guardar	--> Guarda todos los valores seleccionados en un xml 

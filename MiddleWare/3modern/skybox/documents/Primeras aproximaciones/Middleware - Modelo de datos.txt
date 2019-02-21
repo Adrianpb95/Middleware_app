@@ -1,0 +1,101 @@
+MODELO DE DATOS
+
+
+class vbo
+	enum Type { 	COORDINATES_VBO,		
+			TEXTURE_UVS_VBO,
+			NORMALS_VBO,	
+			INDICES_IBO,
+			VBO_COUNT
+		  }
+	int vbo_ids[VBO_COUNT]
+
+
+class elements
+	struct Point2f{x, y}
+	struct Point3f{x, y, z}
+
+	typedef vector< Point3f > Vertex
+	typedef vector< Point2f > TextCoord
+	typedef vector< unsigned > Index
+	typedef Point2f Coord2D
+	typedef Point3f Coord3D
+
+
+class   Color_Buffer_Rgba8888
+	typedef Color_Buffer_Rgba8888 Texture
+
+
+class elevationMesh
+	Vertex positions
+	Vertex normals
+	Vertex colors
+	TextCoord texture_uvs
+	Index indices
+	Texture texture
+	
+	Coord2D dimensions(cols, rows)
+	Coord2D texture_dimensions (textWidth, textHeight)
+	Coord3D mesh_dimensions (width, height, depth)
+	
+	Vertex get_positions(){ return positions }
+	Vertex get_normals(){ return normals }
+	TextCoord get_texture_uvs(){ return texture_uvs }
+	Index get_indices(){ return positions }
+	Texture get_texture(){ return texture }
+
+	void set_position(int i, Vertex position){ positions[i] = position }
+	void set_normals(int i, Vertex normal){ normals[i] = normal }
+	void set_texture_uvs(int i, TextCoord uv){ texture_uvs[i] = uv }
+	void set_index(int i){ indices.push_back(i) }	
+
+	float get_numVertices(){ dimensions.x * dimensions.y }
+	float get_numIndices(){ (dimensions.x-1) * (dimensions.y-1) * 2 * 3 }
+	float get_stepX(){ mesh_dimensions.x / (dimensions.x-1) }
+	float get_stepZ(){ mesh_dimensions.z / (dimensions.y-1) }	
+	float get_textureWidth_step(){ texture_dimensions.x / (dimensions.x-1) }
+	float get_textureHeigth_step(){ texture_dimensions.z / (dimensions.y-1)}
+
+	void set_dimensions(Coord2D dimension){ dimensions = dimension }
+	void set_texture_dimensions(Coord2D dimension){ texture_dimensions = dimension }
+	void set_mesh_dimensions(Coord3D dimension){ mesh_dimensions = dimension }
+
+
+
+----------------------------------------
+
+class elements
+	struct Point2f{x, y}
+	struct Point3f{x, y, z}
+
+	typedef vector< Point3f > Vertex
+	typedef vector< Point2f > TextCoord
+	typedef vector< unsigned > Index
+	typedef Point2f Coord2D
+	typedef Point3f Coord3D
+
+class textura
+	...
+
+class scene_model
+	mesh
+	skybox
+
+class mesh
+	Vertex positions
+	Vertex normals
+	Vertex colors
+	TextCoord texture_uvs
+	Index indices
+	Texture texture
+
+class skybox
+	Textura texture
+	...
+
+
+
+
+
+
+

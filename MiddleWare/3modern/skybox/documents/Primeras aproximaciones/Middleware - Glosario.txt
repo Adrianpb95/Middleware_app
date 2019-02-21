@@ -1,0 +1,8 @@
+﻿GLOSARIO
+
+Malla de elevacion: Conjunto de vertices con una elevación determinada y un color/textura propia.
+Vertice: Conjunto de 3 posiciones(Struc Point3f) --> x, y, z (Punto en un espacio tridimensional)
+Normal:  Conjunto de 3 posiciones(Struc Point3f) --> x, y, z (Punto en un espacio tridimensional)
+Textura: Conjunto de 2 posiciones(Struc Point2f) --> x, y    (Punto en un espacio bidimensional)
+Indices: Indice de cada triangulo de la malla(GLuint)
+

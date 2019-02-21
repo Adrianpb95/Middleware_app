@@ -1,0 +1,29 @@
+﻿ CREADOR DE WORLD TERRAIN
+
+HITO 1
+
+- Se debe poder leer una textura en .tga (*avisando que debe ser un mapa de elevación en escala de grises)
+- Solo se puede leer 1 textura a la vez
+- Se debe crear una malla de elevacion predeterminada (tamaño, altura y color)
+- Se muestra por pantalla
+
+HITO 2
+
+- Una vez creada, facilitamos al usuario la posibilidad de cambiar diversos aspectos:
+	* Dimensiones en alto y largo (x , z)
+	* Dimensiones en altura (y)
+	* Definición (Cambiando el nº de filas y columnas conseguimos que sea más o menos lowpoly)
+	* Cambiar el color base
+	* Añadir textura
+- Mostrar los cambios de nuevo por pantalla
+
+HITO 3
+
+- Crear más opciones para el editor:
+	* Activar o desactivar luces en la escena
+	* Colocar la fuente de luz
+	* Poder girar la malla  
+
+HITO 4
+
+- Poder guardar los valores de la malla en xml, obj ...

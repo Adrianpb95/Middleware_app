@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Skybox", "Skybox.vcxproj", "{636EB426-ECAF-4E3F-ACE9-9DF1106AE01D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "DLL", "..\vs-2017-DLL\DLL\DLL.vcxproj", "{66C4707B-4169-4BF0-A291-28D8C6321FFA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{636EB426-ECAF-4E3F-ACE9-9DF1106AE01D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{636EB426-ECAF-4E3F-ACE9-9DF1106AE01D}.Debug|Win32.Build.0 = Debug|Win32
+		{636EB426-ECAF-4E3F-ACE9-9DF1106AE01D}.Debug|x64.ActiveCfg = Debug|Win32
+		{636EB426-ECAF-4E3F-ACE9-9DF1106AE01D}.Release|Win32.ActiveCfg = Release|Win32
+		{636EB426-ECAF-4E3F-ACE9-9DF1106AE01D}.Release|Win32.Build.0 = Release|Win32
+		{636EB426-ECAF-4E3F-ACE9-9DF1106AE01D}.Release|x64.ActiveCfg = Release|Win32
+		{66C4707B-4169-4BF0-A291-28D8C6321FFA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{66C4707B-4169-4BF0-A291-28D8C6321FFA}.Debug|Win32.Build.0 = Debug|Win32
+		{66C4707B-4169-4BF0-A291-28D8C6321FFA}.Debug|x64.ActiveCfg = Debug|x64
+		{66C4707B-4169-4BF0-A291-28D8C6321FFA}.Debug|x64.Build.0 = Debug|x64
+		{66C4707B-4169-4BF0-A291-28D8C6321FFA}.Release|Win32.ActiveCfg = Release|Win32
+		{66C4707B-4169-4BF0-A291-28D8C6321FFA}.Release|Win32.Build.0 = Release|Win32
+		{66C4707B-4169-4BF0-A291-28D8C6321FFA}.Release|x64.ActiveCfg = Release|x64
+		{66C4707B-4169-4BF0-A291-28D8C6321FFA}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0387B88B-5B67-4AA9-B75B-94CF27826998}
+	EndGlobalSection
+EndGlobal

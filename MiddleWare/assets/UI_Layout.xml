@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<Screen width = "1600" height = "900" name = "ElevationTool">  
+	<Window name = "Create Mesh" visible = "1">       
+		<Layout type = "GridLayout" orientation = "Horizontal" size = "2" alignment = "Middle" margin = "15" spacing = "15" />	   	
+	   	<Label name = "Definition :" caption = "sans-bold"/>
+	   	<Widget>
+	   		<Layout type = "BoxLayout" orientation = "Horizontal" size = "" alignment = "Fill" margin = "0" spacing = "20" />	   		
+	   		<Slider value = "1" width = "140"/>
+		</Widget>
+		<Label name = "Mesh Width :" caption = "sans-bold"/>
+		<IntBox editable = "1" width = "150" height = "20" value = "2" font = "20" units = "" format = "[1-9][0-9]*" spinnable = "1" min = "1" max = "100" increment = "1" />	
+		<Label name = "Mesh Large :" caption = "sans-bold"/>
+		<IntBox editable = "1" width = "150" height = "20" value = "3" font = "20" units = "" format = "[1-9][0-9]*" spinnable = "1" min = "1" max = "100" increment = "1" />	
+		<Label name = "Height Map :" caption = "sans-bold"/>
+		<Widget>
+			<Layout type = "BoxLayout" orientation = "Horizontal" size = "" alignment = "Middle" margin = "0" spacing = "6" />	   		
+	   		<Button name = "Open" width = "150" height = "30" enable = "1" value = "4" />	   		
+		</Widget>
+		<Label name = "Texture :" caption = "sans-bold"/>
+		<Widget>
+			<Layout type = "BoxLayout" orientation = "Horizontal" size = "" alignment = "Middle" margin = "0" spacing = "6"/>	   		
+	   		<Button name = "Open" width = "150" height = "30" enable = "0" value = "6"/>	  
+	   		<CheckBox name = "Use" font = "20" check = "0" /> 		
+		</Widget>
+		<Label name = "Create Mesh :" caption = "sans-bold"/>
+		<Button name = "Accept" width = "150" height = "30" enable = "1" value = "-2"/>
+	</Window>
+
+	<Window name = "Change Mesh" visible = "0">    
+		<Layout type = "GroupLayout" orientation = "Horizontal" size = "2" alignment = "Middle" margin = "15" spacing = "15" />   
+		<Layout type = "GridLayout" orientation = "Horizontal" size = "2" alignment = "Middle" margin = "15" spacing = "15" />	  
+	 	<Label name = "Mesh Height :" caption = "sans-bold"/>
+	 	<IntBox editable = "1" width = "150" height = "20" value = "7" font = "20" units = "" format = "[1-9][0-9]*" spinnable = "1" min = "1" max = "20" increment = "1" />	
+	 	<Label name = "Scale :" caption = "sans-bold"/>
+	 	<IntBox editable = "1" width = "150" height = "20" value = "8" font = "20" units = "" format = "[1-9][0-9]*" spinnable = "1" min = "1" max = "5" increment = "1" />	
+	 	<Label name = "Mesh Color :" caption = "sans-bold"/>
+	 	<ColorPicker r = "9" g = "10" b = "11" width = "150" height = "30" side = "Left" /> 
+	 	<Label name = "Light Pos :" caption = "sans-bold"/>
+	 	<IntBox editable = "1" width = "150" height = "20" value = "12" font = "20" units = "x" format = "" spinnable = "1" min = "-100" max = "100" increment = "1" />	
+		<Label name = "Light Pos :" caption = "sans-bold"/>
+		<IntBox editable = "1" width = "150" height = "20" value = "13" font = "20" units = "y" format = "" spinnable = "1" min = "-100" max = "100" increment = "1" />	
+		 <Label name = "Light Pos :" caption = "sans-bold"/>	
+		 <IntBox editable = "1" width = "150" height = "20" value = "14" font = "20" units = "z" format = "" spinnable = "1" min = "-100" max = "100" increment = "1" />					  
+		<Label name = "Intensity :" caption = "sans-bold"/>
+		<Widget>
+			<Layout type = "BoxLayout" orientation = "Horizontal" size = "" alignment = "Fill" margin = "0" spacing = "20"/>	  
+			<Slider value = "15" width = "140"/>
+		</Widget>
+		<Label name = "Diffuse :" caption = "sans-bold"/>
+		<Widget>
+			<Layout type = "BoxLayout" orientation = "Horizontal" size = "" alignment = "Fill" margin = "0" spacing = "20"/>	
+			<Slider value = "16" width = "140"/>  
+		</Widget>
+		<Label name = "Light Color :" caption = "sans-bold"/>
+		 	<ColorPicker r = "17" g = "18" b = "19" width = "150" height = "30" side = "Left" /> 
+	</Window>
+
+	<Window name = "Files :" visible = "0">  
+		 	<Layout type = "GridLayout" orientation = "Horizontal" size = "1" alignment = "Middle" margin = "5" spacing = "5" />			  		
+		  	<Button name = "Save" width = "150" height = "30" enable = "1" value = "-1" />	
+	</Window>
+</Screen>
+
+	
